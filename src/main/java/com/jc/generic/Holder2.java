@@ -1,0 +1,32 @@
+package com.jc.generic;
+
+/**
+ * 让第一个例子更加通用的代码，但缺陷是无法得到编译器的保证，因为都是用强制转型，万一不是这个类型或其子类，那就只能在运行时才能发现，这成本是很高的
+ * 
+ * @author jevoncode
+ *
+ */
+public class Holder2 {
+	private Object a;
+
+	public Holder2(Object a) {
+		this.a = a;
+	}
+
+	public void set(Object a) {
+		this.a = a;
+	}
+
+	public Object get() {
+		return a;
+	}
+
+	public static void main(String[] args) {
+		Holder2 h2 = new Holder2(new Automobile());
+		Automobile a = (Automobile) h2.get();
+		h2.set("Not an Automobile");
+		String s = (String) h2.get();
+		h2.set(1); // Autoboxes to Integer
+		Integer x = (Integer) h2.get();
+	}
+} 
