@@ -1,4 +1,4 @@
-package com.jc.generic.util.coffee;
+package com.jc.generic.coffee;
 
 /**
  * 哈哈，终于找到Java编程思想书里的一个bug了，这main方法不能在CoffeeGenerator类里，不然会和泛型冲突

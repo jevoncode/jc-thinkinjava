@@ -1,4 +1,4 @@
-package com.jc.generic.util.coffee;
+package com.jc.generic.coffee;
 
 public class Coffee {
 	private static long counter = 0;

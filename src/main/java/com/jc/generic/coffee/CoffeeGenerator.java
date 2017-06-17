@@ -1,7 +1,9 @@
-package com.jc.generic.util.coffee;
+package com.jc.generic.coffee;
 
 import java.util.Iterator;
 import java.util.Random;
+
+import com.jc.generic.util.Generator;
 
 public class CoffeeGenerator<Coffee> implements Generator<Coffee>, Iterable<Coffee> {
 	private Class[] types = { Latte.class, Mocha.class, Cappuccino.class, Americano.class, };
