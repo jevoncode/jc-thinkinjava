@@ -1,4 +1,4 @@
-package com.jc.generic.util;
+package com.jc.generic.util.tuple;
 
 /**
  * 使用泛型的继承，从而创建更长的元组

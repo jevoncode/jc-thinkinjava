@@ -1,5 +1,4 @@
-package com.jc.generic.util;
-
+package com.jc.generic.util.tuple;
 
 /**
  * 继续创建更长的元组

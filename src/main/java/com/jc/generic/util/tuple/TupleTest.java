@@ -1,4 +1,4 @@
-package com.jc.generic.util;
+package com.jc.generic.util.tuple;
 
 class Amphibian {
 }
