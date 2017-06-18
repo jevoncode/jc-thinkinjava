@@ -8,7 +8,7 @@ import java.util.Map;
 
 /**
  * 泛型也称类型参数，但是使用getTypeParameters()获取不到，会被擦除，实际是object
- * 
+ * 在泛型代码内部，是无法获得任何有关泛型参数类型的信息
  * @author jevoncode
  *
  */
