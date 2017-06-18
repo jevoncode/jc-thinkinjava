@@ -22,7 +22,7 @@ public class Fibonacci implements Generator<Integer> {
 
 	public static void main(String[] args) {
 		Fibonacci gen = new Fibonacci();
-		for (int i = 0; i < 18; i++)
+		for (int i = 0; i < 12; i++)
 			System.out.print(gen.next() + " ");
 	}
 }
