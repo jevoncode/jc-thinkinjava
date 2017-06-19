@@ -1,5 +1,10 @@
 package com.jc.generic;
 
+
+/**
+ * 模板方法的一个例子，特别注意X是个对象，不是泛型
+ * @author jevoncode
+ */
 abstract class GenericWithCreate<T> {
 	final T element;
 
