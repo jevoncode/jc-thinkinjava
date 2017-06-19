@@ -1,7 +1,7 @@
 package com.jc.generic;
 
 /**
- * 既然ClassTypeCapture这个例子展示了对instance of的补偿。那这个例子则展示对创建对象new的补偿
+ * 既然ClassTypeCapture这个例子展示了对instance of的补偿。那这个例子则展示对创建对象new的补偿，引入一个工厂对象即可
  *
  */
 class ClassAsFactory<T> {
