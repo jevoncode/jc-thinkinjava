@@ -5,6 +5,7 @@ import java.util.Random;
 
 /**
  * 粗糙数组(ragged array)，在多维数组里定义时指定第一维即可
+ * 可以发现，二维数组是引用类型
  * @author jevoncode
  *
  */
