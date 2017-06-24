@@ -3,7 +3,7 @@ package com.jc.arrays;
 import java.util.Arrays;
 
 /**
- * 数组复制，也经常可以在容器的类中看到这方法的使用
+ * 数组复制System.arraycopy()，也经常可以在容器的类中看到这方法的使用
  * @author jevoncode
  *
  */
