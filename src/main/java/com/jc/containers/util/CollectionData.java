@@ -7,6 +7,7 @@ import com.jc.generic.util.Generator;
 /**
  * Collection对象都是接受另外个Collection对象的作为构造方法的参数
  * 但没有现成的工具可以根据生成器去生成想要的集合，所以才写出这个例子CollectionData
+ * 这是使用了适配器模式来事适配Generator
  * @author jevoncode
  *
  */
