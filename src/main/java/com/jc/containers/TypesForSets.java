@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.TreeSet;
 /**
  * 展示HashSet、LinkedHashSet、TreeSet的用法及它们的要求
- * 如果为实现hashCode()只实现equals()并不能去重
+ * 如果未实现hashCode()只实现equals()并不能去重
  * 这三种都是有循序
  * @author jevoncode
  *
