@@ -13,6 +13,10 @@ import com.jc.designpattern.containers.Countries;
  * 实现简单散列原理的Map
  * 
  * 但实际的HashMap会对散列码(hash code)进行优化
+ * 
+ * 在这里有一些概念:
+ * 桶(bucket): 就是数组的槽位(slot)
+ * 桶的数量，也就是数组的长度
  * @author jevoncode
  * 
  */
