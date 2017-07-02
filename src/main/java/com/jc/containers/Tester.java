@@ -29,6 +29,9 @@ public class Tester<C> {
 	private static String numberField() {
 		return "%" + fieldWidth + "d";
 	}
+	private static String numberField2() {
+		return "%" + (fieldWidth-2) + "dns";
+	}
 
 	private static int sizeWidth = 5;
 	private static String sizeField = "%" + sizeWidth + "s";
@@ -97,11 +100,7 @@ public class Tester<C> {
 				int reps = test.test(kontainer, param);
 				long duration = System.nanoTime() - start;
 				long timePerRep = duration / reps; // Nanoseconds
-//				System.out.format(numberField(), timePerRep);
-				if(fieldWidth==12) //链表测试的格式
-					System.out.format("%10dns", timePerRep);
-				else
-					System.out.format("%6dns", timePerRep);
+				System.out.format(numberField2(), timePerRep);
 			}
 			System.out.println();
 		}
