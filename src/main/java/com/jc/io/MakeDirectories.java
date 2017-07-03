@@ -3,8 +3,8 @@ package com.jc.io;
 import java.io.File;
 
 /**
- * 
- * @author bsmwhd2
+ * File类的一些工具方法
+ * @author jevoncode
  *
  */
 public class MakeDirectories {
