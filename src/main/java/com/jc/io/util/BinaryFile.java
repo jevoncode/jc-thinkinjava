@@ -5,6 +5,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+/**
+ * 读写工具类
+ * @author jevoncode
+ *
+ */
 public class BinaryFile {
 	public static byte[] read(File bFile) throws IOException {
 		BufferedInputStream bf = new BufferedInputStream(new FileInputStream(bFile));
