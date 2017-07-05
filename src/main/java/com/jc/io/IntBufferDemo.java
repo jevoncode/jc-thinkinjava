@@ -3,7 +3,7 @@ package com.jc.io;
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
 /**
- * 视图缓冲器(View Buffer) 例子
+ * 视图缓冲器(View Buffer) 例子，底层还是ByteBuffer
  * @author jevoncode
  *
  */
