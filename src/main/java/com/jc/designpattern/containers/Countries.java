@@ -19,6 +19,8 @@ import java.util.TreeSet;
 /**
  * 除了用数据生成器Generator生成数据，还可使用Abstract的类来实现生成数据
  * 这里使用的设计模式是享元模式（Flyweight），不直接操作数据，而是索引或其部分
+ * 
+ * 最新体会，享元模式可以在不修改原数据结构情况下，用算法逻辑趋去实现新的数据结构。可以说新的数据结构是虚拟的
  * @author jevoncode
  *
  */

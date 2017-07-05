@@ -33,7 +33,7 @@ public class BufferToText {
 		System.out.println("Decoded using " + encoding + ": " + Charset.forName(encoding).decode(buff));
 		
 		
-		/**第三种，是输入时确定编码格式**/
+		/**第三种，是输入时确定编码格式，不过还是使用ByteBuffer**/
 		// Or, we could encode with something that will print:
 		fc = new FileOutputStream("data2.txt").getChannel();
 		fc.write(ByteBuffer.wrap("Some text".getBytes("UTF-16BE")));
@@ -45,11 +45,18 @@ public class BufferToText {
 		buff.flip();
 		System.out.println(buff.asCharBuffer());
 		
-		/**第四种，是输入时确定编码格式**/
+		/**第四种，是输入时确定编码格式，跟第三种不同，ByteBuffer转为CharBuffer了
+		 * ByteBuffer转为CharBuffer去输出就需要个计算过程，
+		 * ByteBuffer分配了24个字节
+		 * buff.asCharBuffer().put("Some text"); 只占用了18个字节，一个字符占两位字节
+		 * 则剩下的6个字节将转为空字符
+		 * 
+		 * **/
 		// Use a CharBuffer to write through:
 		fc = new FileOutputStream("data2.txt").getChannel();
 		buff = ByteBuffer.allocate(24); // More than needed
 		buff.asCharBuffer().put("Some text");
+		System.out.println(buff.asCharBuffer());  //"Some text   "
 		fc.write(buff);
 		fc.close();
 		// Read and display:
@@ -57,6 +64,6 @@ public class BufferToText {
 		buff.clear();
 		fc.read(buff);
 		buff.flip();
-		System.out.println(buff.asCharBuffer());
+		System.out.println(buff.asCharBuffer()); //"Some text   "
 	}
 }
