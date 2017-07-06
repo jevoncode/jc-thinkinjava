@@ -14,6 +14,8 @@ import java.util.Arrays;
  * Endian和Little Endian也几乎引起一场战争。在计算机业界，Endian表示数据在存储器中的存放顺序。采用大端方式
  * 进行数据存放符合人类的正常思维，而采用小端方式进行数据存放利于计算机处理。
  * 
+ * 这些顺序，最基本的单位是 字节(byte)，而不是 位(bit)。
+ * 
  * @author jevoncode
  *
  */
