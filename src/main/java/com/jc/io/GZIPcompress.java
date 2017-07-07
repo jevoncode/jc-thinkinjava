@@ -22,7 +22,7 @@ public class GZIPcompress {
 					"Usage: \nGZIPcompress file\n" + "\tUses GZIP compression to compress " + "the file to test.gz");
 			System.exit(1);
 		}
-		BufferedReader in = new BufferedReader(new FileReader(args[0])); //读要被压缩的文件
+		BufferedReader in = new BufferedReader(new FileReader(args[0])); //读要被压缩的文件，FileReader不支持文件夹，原生代码写着的，java源码是看不出
 		BufferedOutputStream out = new BufferedOutputStream(new GZIPOutputStream(new FileOutputStream("test.gz"))); //创建压缩文件的输出流
 		System.out.println("Writing file");
 		int c;
