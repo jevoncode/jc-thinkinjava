@@ -3,7 +3,7 @@ package com.jc.enumerated;
 import java.text.DateFormat;
 import java.util.Date;
 /**
- * 常量相关的方法——在枚举里实现抽象方法
+ * 常量相关的方法——在枚举里实现抽象方法，被称为  表驱动代码（table-driven code）跟命令模式很像
  * @author jevoncode
  *
  */
