@@ -27,6 +27,7 @@ public class OSExecute {
 		} catch (Exception e) {
 			// Compensate for Windows 2000, which throws an
 			// exception for the default command line:
+			e.printStackTrace();
 			if (!command.startsWith("CMD /C"))
 				command("CMD /C " + command);
 			else
