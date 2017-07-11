@@ -10,6 +10,8 @@ import com.jc.io.util.BinaryFile;
 import com.jc.io.util.Directory;
 /**
  * Java编程思想里的 单元测试的框架
+ * 
+ * 这个获取通过class文件的二进制数据获取类的全限定名，略屌，略屌
  * @author jevoncode
  *
  */
