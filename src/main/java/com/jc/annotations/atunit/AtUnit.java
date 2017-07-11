@@ -135,7 +135,7 @@ public class AtUnit implements ProcessFiles.Strategy {
 	private static Object createTestObject(Method creator) {
 		if (creator != null) {
 			try {
-				return creator.invoke(testClass);
+				return creator.invoke(testClass);  //使用静态方法实例化对象
 			} catch (Exception e) {
 				throw new RuntimeException("Couldn’t run " + "@TestObject (creator) method.");
 			}
