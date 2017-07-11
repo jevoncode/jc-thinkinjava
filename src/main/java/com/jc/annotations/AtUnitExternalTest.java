@@ -2,7 +2,7 @@ package com.jc.annotations;
 
 import com.jc.io.util.OSExecute;
 /**
- * 使用继承来修改AtUnitExample1进行测试
+ * 使用继承来修改AtUnitExample1进行非嵌入式的测试
  * @author jevoncode
  *
  */
