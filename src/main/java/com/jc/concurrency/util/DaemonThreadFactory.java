@@ -1,4 +1,4 @@
-package com.jc.concurrency;
+package com.jc.concurrency.util;
 
 import java.util.concurrent.ThreadFactory;
 

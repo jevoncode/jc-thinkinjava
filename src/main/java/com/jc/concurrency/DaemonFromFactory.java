@@ -4,6 +4,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
+import com.jc.concurrency.util.DaemonThreadFactory;
+
 /**
  * 实现ThreadFactory来创建线程池，里面的线程都是后台线程
  * 
