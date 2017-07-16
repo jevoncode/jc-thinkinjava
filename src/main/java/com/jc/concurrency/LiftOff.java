@@ -24,7 +24,7 @@ public class LiftOff implements Runnable {
 	public void run() {
 		while (countDown-- > 0) {
 			System.out.print(status());
-			Thread.yield();
+			Thread.yield();  //告诉Java线程机制中的线程调度器，这是最好的切换给其他任务一段时间的大好时机，Java是抢占式（preemptive）线程
 		}
 	}
 }
