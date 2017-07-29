@@ -12,6 +12,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Pair不是线程安全所以需通过PairManager去操作Pair类
  * 使用模版方式展示不同的同步方法，一个是方法同步，另一个是同步控制块
  * 实验结果，PairManager2肯定比PairManager1快。
+ * 
+ * 注: synchronize不是方法的特征（签名），所以与覆盖、实现无关
  * @author jevoncode
  *
  */
