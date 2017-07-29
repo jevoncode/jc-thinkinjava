@@ -147,7 +147,12 @@ class PairChecker implements Runnable {
 	public void run() {
 		while (true) {
 			pm.checkCounter.incrementAndGet();
-			pm.getPair().checkState();
+			try{
+				pm.getPair().checkState();
+			}catch (Exception e) {
+				System.out.println(pm + " encounter error");
+				throw e;
+			}
 		}
 	}
 }
