@@ -36,6 +36,7 @@ class IOBlocked implements Runnable {
 			System.out.println("Waiting for read():");
 			in.read();
 		} catch (IOException e) {
+			System.err.println(e);
 			if (Thread.currentThread().isInterrupted()) {
 				System.out.println("Interrupted from blocked I/O");
 			} else {
