@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 class TaskPortion implements Runnable {
 	private static int counter = 0;
 	private final int id = counter++;
-	private static Random rand = new Random(47);
+	private static Random rand = new Random(47);  //Random是线程安全的类
 	private final CountDownLatch latch;
 
 	TaskPortion(CountDownLatch latch) {
