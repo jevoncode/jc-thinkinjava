@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * DelayQueue是一个无界的BlokingQueue，用于放置实现Delayed接口的对象
  * 
- * 其中对象只能在到期时才能从队列中取走。这种队列是有序的，即队头对象的延迟到期最长（最紧急）
+ * 其中对象只能在到期时才能从队列中取走。这种队列是有序的，即队头对象的延迟到期最长（最紧急）。如果没有任何延迟到期，那么就不会有任何头元素，并且poll()将返回null
  * @author jevoncode
  *
  */
