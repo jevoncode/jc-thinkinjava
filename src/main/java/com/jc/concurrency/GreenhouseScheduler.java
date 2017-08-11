@@ -15,8 +15,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class GreenhouseScheduler {
 
-	private volatile boolean light = false;
-	private volatile boolean water = false;
+	private volatile boolean light = false; //布尔类型是原子操作，所以可以使用valatile
+	private volatile boolean water = false; //布尔类型是原子操作，所以可以使用valatile
 	private String thermostat = "Day";
 
 	public synchronized String getThermostat() {
