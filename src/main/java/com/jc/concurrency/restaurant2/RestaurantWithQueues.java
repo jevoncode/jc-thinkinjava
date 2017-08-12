@@ -16,6 +16,8 @@ import com.jc.enumerated.menu.Food;
 
 /**
  * 饭店仿真，使用队列来设计并发模型，从而专注于客户、服务员、厨师的设计
+ * 
+ * 运用了之前学的枚举，让食物获取更加漂亮
  * @author jevoncode
  *
  */
