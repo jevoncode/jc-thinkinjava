@@ -1,4 +1,4 @@
-package com.jc.concurrency;
+package com.jc.concurrency.simulation;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;
@@ -8,6 +8,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+
 /**
  * args=5
  * 仿真银行出纳员来计算需要多少出纳员，可以用于服务器提供随机时间的服务，然后计算需要多少台服务器才能满足需求

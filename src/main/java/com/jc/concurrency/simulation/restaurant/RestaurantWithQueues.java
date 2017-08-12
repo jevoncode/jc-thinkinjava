@@ -1,4 +1,4 @@
-package com.jc.concurrency.restaurant2;
+package com.jc.concurrency.simulation.restaurant;
 
 import java.util.ArrayList;
 import java.util.List;
