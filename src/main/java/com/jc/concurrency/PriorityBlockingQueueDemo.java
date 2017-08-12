@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 优先级队列PriorityBlockingQueue
  * 是类似于DelayQueue，不过这个PriorityBlockingQueue是以优先级做维度
+ * PriorityBlockingQueue会将优先级最小的（也就是compareTo）返回值的最小的元素先取出
  * @author jevoncode
  *
  */
