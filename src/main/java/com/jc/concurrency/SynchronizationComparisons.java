@@ -181,7 +181,7 @@ public class SynchronizationComparisons {
 		baseLine.timedTest();
 		synch.timedTest();
 		lock.timedTest();
-		atomic.timedTest();//Cycles过10,000时AtomicLong会报数组越界异常，暂时查不出什么原因，我们先看synchronized和lock的对比
+		atomic.timedTest();//Cycles过10,000时AtomicLong会报数组越界异常，暂时查不出什么原因，我们先看synchronized和lock的对比  补充：原来是index++没做同步
 		Accumulator.report(synch, baseLine);
 		Accumulator.report(lock, baseLine);
 		Accumulator.report(atomic, baseLine);
